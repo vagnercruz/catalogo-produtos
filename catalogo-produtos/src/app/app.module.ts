@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home-module';
 import { ProductDetailsModule } from './pages/product-details/product-details-module';
-import { CartModule } from './pages/cart/cart-module';  // Verifique se o seu AppComponent está em src/app/
+import { CartModule } from './pages/cart/cart-module';
 
 @NgModule({
   declarations: [
