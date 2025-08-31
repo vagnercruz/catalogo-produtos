@@ -1,1 +1,12 @@
 <p>product-card works!</p>
+<mat-card class="produto-card">
+  <img mat-card-image [src]="produto.image" [alt]="produto.title">
+  <mat-card-title>{{ produto.title }}</mat-card-title>
+  <mat-card-subtitle>R$ {{ produto.price | number:'1.2-2' }}</mat-card-subtitle>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="verDetalhes()">
+      Ver Detalhes
+    </button>
+  </mat-card-actions>
+</mat-card>

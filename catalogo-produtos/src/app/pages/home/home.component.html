@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Catálogo de Produtos</h1>
+
+  <div *ngIf="carregando">Carregando produtos...</div>
+
+  <div class="grid" *ngIf="!carregando">
+    <app-product-card 
+      *ngFor="let produto of produtos" 
+      [produto]="produto">
+    </app-product-card>
+  </div>
+</div>
